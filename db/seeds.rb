@@ -7,7 +7,7 @@ Swatch.delete_all
  Color.create(rgb: "[#{rand(256)}, #{rand(256)}, #{rand(256)}]")
 end
 
-20.times do
+5.times do
     Image.create(html: "<img src='https://i.picsum.photos/id/#{rand(1500)}/200/300'>", pinned: false)
 end
 

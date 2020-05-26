@@ -848,3 +848,52 @@ Processing by SwatchesController#index as HTML
 Completed 200 OK in 73ms (Views: 65.4ms | ActiveRecord: 3.9ms | Allocations: 38211)
 
 
+Started GET "/swatches" for ::1 at 2020-05-25 23:35:12 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SwatchesController#index as HTML
+  [1m[36mSwatch Load (0.3ms)[0m  [1m[34mSELECT "swatches".* FROM "swatches"[0m
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mImage Load (0.1ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mColor Load (0.1ms)[0m  [1m[34mSELECT "colors".* FROM "colors" WHERE "colors"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mImage Load (0.1ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mColor Load (0.4ms)[0m  [1m[34mSELECT "colors".* FROM "colors" WHERE "colors"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mImage Load (0.1ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mColor Load (0.2ms)[0m  [1m[34mSELECT "colors".* FROM "colors" WHERE "colors"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mImage Load (0.1ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mColor Load (0.1ms)[0m  [1m[34mSELECT "colors".* FROM "colors" WHERE "colors"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mImage Load (0.1ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mColor Load (0.1ms)[0m  [1m[34mSELECT "colors".* FROM "colors" WHERE "colors"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mCACHE Color Load (0.0ms)[0m  [1m[34mSELECT "colors".* FROM "colors" WHERE "colors"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mCACHE Color Load (0.0ms)[0m  [1m[34mSELECT "colors".* FROM "colors" WHERE "colors"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mCACHE Color Load (0.0ms)[0m  [1m[34mSELECT "colors".* FROM "colors" WHERE "colors"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mCACHE Color Load (0.0ms)[0m  [1m[34mSELECT "colors".* FROM "colors" WHERE "colors"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mCACHE Image Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+  [1m[36mCACHE Color Load (0.0ms)[0m  [1m[34mSELECT "colors".* FROM "colors" WHERE "colors"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/swatches_controller.rb:5:in `index'
+Completed 200 OK in 78ms (Views: 69.7ms | ActiveRecord: 3.8ms | Allocations: 38395)
+
+
