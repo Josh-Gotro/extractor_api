@@ -14,5 +14,6 @@ class ImagesController < ApplicationController
             render json: {message: "We don't seem to have that image on hand"}
         end
     end
-    
+
+
 end
