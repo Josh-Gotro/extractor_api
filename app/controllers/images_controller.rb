@@ -15,6 +15,11 @@ class ImagesController < ApplicationController
         end
     end
 
+    def update
+        image = Image.find_by(id: params[:id])
+        image.update({pinned: params[:pinned]})
+    end
+
     def destroy
         image = Image.find_by(id: params[:id])
         image.delete
