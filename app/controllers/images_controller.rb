@@ -15,5 +15,12 @@ class ImagesController < ApplicationController
         end
     end
 
+    def destroy
+        image = Image.find_by(id: params[:id])
+        image.delete
+    end
+
+
+
 
 end
