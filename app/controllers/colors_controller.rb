@@ -15,4 +15,11 @@ class ColorsController < ApplicationController
         end
     end
 
+    def create 
+        color = Color.create!(rgb: params[:rgb])
+        # color.save
+        render json: color
+    end
+
+ 
 end
