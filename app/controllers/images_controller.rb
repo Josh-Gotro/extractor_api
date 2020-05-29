@@ -14,5 +14,13 @@ class ImagesController < ApplicationController
             render json: {message: "We don't seem to have that image on hand"}
         end
     end
-    
+
+    def destroy
+        image = Image.find_by(id: params[:id])
+        image.delete
+    end
+
+
+
+
 end
